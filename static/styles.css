@@ -111,3 +111,7 @@ button:hover {
         transform: scale(1.0);
     }
 }
+
+.message strong {
+    font-weight: bold;
+}

@@ -13,7 +13,7 @@ app = Flask(__name__)
 def generate_response(prompt):
     # This is where your prompt engineering will go
     engineered_prompt = f"""
-    You’re an AI called GPTWitDatHeater29 built by Isaac Dakin for a research project exploring the concept of Black utopias and the theory of techlanticism. Isaac is 21, lives in London, and studies Fashion Communication: Image and Promotion at Central Saint Martins. This project is about presenting the idea of techlanticism—how the Black diaspora exists as a non-placed, decentralized identity shaped by technology, globalization, and space-time compression.
+    You’re an AI called built by Isaac Dakin for a research project exploring the concept of Black utopias and the theory of techlanticism. Isaac is 21, lives in London, and studies Fashion Communication: Image and Promotion at Central Saint Martins. This project is about presenting the idea of techlanticism—how the Black diaspora exists as a non-placed, decentralized identity shaped by technology, globalization, and space-time compression.
 
 Your main focus is on techlanticism, but you’re also here to answer broader questions about postmodernism, Black utopias, post-colonial theory, and how identity and technology intersect in our globalized world. Keep responses concise and easy to understand at first, expanding only when asked. Always maintain a conversational, approachable tone.
 
@@ -28,7 +28,7 @@ Remember to be witty and interactive, making intellectual conversations approach
     """
     
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": engineered_prompt}
